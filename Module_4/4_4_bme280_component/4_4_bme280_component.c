@@ -86,7 +86,7 @@ void app_main(void)
         } else {
             ESP_LOGW(TAG, "Sensor read failed (t=%d p=%d h=%d)", temp_ok, press_ok, humi_ok);
         }
-        // Delay for 2 seconds before the next reading
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        // Delay for 30 seconds before the next reading
+        vTaskDelay(pdMS_TO_TICKS(30000));
     }
 }
